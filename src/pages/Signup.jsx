@@ -50,14 +50,14 @@ const Signup = () => {
                   placeholder="Password"
                   autoComplete="current-password"
                 />
-                <button className={`bg-red-600 py-3 my-6 rounded font-bold`}>
+                <button className={`bg-red-600 py-3 my-6 rounded font-bold hover:bg-red-500`}>
                   Sign Up
                 </button>
                 <div
                   className={`flex justify-between items-center text-sm text-gray-600`}
                 >
-                  <p>
-                    <input type="checkbox" />
+                  <p  >
+                    <input className={`mr-2`} type="checkbox" />
                     Remember me
                   </p>
                   <p>Need Help?</p>
@@ -66,7 +66,7 @@ const Signup = () => {
                   <span className={`text-gray-600`}>
                     Already subscribed to Netflix?
                   </span>{" "}
-                  <Link to="/login">Sign In</Link>
+                  <Link to="/login" className={`hover:text-slate-200`} >Sign In</Link>
                 </p>
               </form>
             </div>
